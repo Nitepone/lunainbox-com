@@ -5,7 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lunainbox</title>
 </head>
+<link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,R0lGODlhNABEAPMKAGVsuV1vwXyn+gACFSEdPjk5k1FerTeG+1CV+2SY+QAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwH//wAh+QQFAAAKACwAAAAANABEAAAE/1DJSau9OOvNu/8agoAkKZboFayBSBBskKaxC7PzVyOC8L49UUxSKBZylF3vRwgihgrjEbnqLQm2l80qWBUBgGKuatUimFurtwAWo8hSJpcb+4LD0xLcKJ/36mx3biBkPXZFdAF+a2AGBm15HYUChwWJiwF2jpCEimoBm3iTMXeCgYOSnn+gj6KqXSylkJypl7CTq7KylR6jnjGYuqW8tZ+riSvCyq4cvsefycu6RSvNr6QA2NLTlrDW yAFg2tvD3dXF4+TKiJ/ft+Hq0uyr7tHx8t30G2T29+v53lL186fLV69YBJUZzHBuT8IBA8Rdw8FQ hgKHBCFKBKcBFyyNd/9A6hKZ7RfFjq9WkSRZiiS/k/tiZDIyEqLNmxB9nbMGyE5LnEB1WsQgc6aU eKE2wtJHVKYUn9uSlny2s4Kvcli3vWSqYmLWWVpNcrXw8t9RYXa2BmyaC+3Tf0pfsv1E7ulbWcAC Vr26ze7ZUnkbDr3odVegopD8FkiQwOPewlkR41HM2PFgy/2E2uFyoPOByjLJpnwHeCIjAJw9g4aS ZPSqvM9WiZjNQ0Bnxu4wwV76ibaIHrcT5PYzZ3dR2j0Y445JnLhxmcgFKBdeTLfp61z0uH4HrrsV GkWxOx88Jrx3TEisjhaaKH1rTOfXupdQ9PX1qvPrc4cGc37rxxz5JxofgPwJyNNEBgqEYIJdWcZg RQ4+CGFoEqJUVIUYZuheBAAh+QQFAAAAACwAAAAAAQABAAACAkQBACH5BAUAAAAALAAAAAABAAEA AAICRAEAIfkEBQAAAAAsAAAAAAEAAQAAAgJEAQAh+QQFAAAAACwAAAAAAQABAAACAkQBACH5BAUA AAAALAAAAAABAAEAAAICRAEAIfkEBQAAAAAsAAAAAAEAAQAAAgJEAQAh+QQFAAAAACwAAAAAAQAB AAACAkQBACH5BAUAAAAALAAAAAABAAEAAAICRAEAIfkEBQAAAAAsAAAAAAEAAQAAAgJEAQAh+QQF AAAAACwAAAAAAQABAAACAkQBACH5BAUAAAAALAAAAAABAAEAAAICRAEAIfkEBQAAAAAsAAAAAAEA AQAAAgJEAQAh+QQFAAAAACwAAAAAAQABAAACAkQBACH5BAUAAAAALAAAAAABAAEAAAICRAEAIfkE BQAAAAAsAAAAAAEAAQAAAgJEAQAh+QQFAAAAACwAAAAAAQABAAACAkQBACH5BAUAAAAALAAAAAAB AAEAAAICRAEAIfkEBQAAAAAsAAAAAAEAAQAAAgJEAQAh+QQFAAAAACwAAAAAAQABAAACAkQBACH5 BAUAAAAALAAAAAABAAEAAAICRAEAIfkECQAAAAAsAAAAAAwAIgAAAhKEj6nL7Q+jnLTai7PevPsP GgUAIfkEBQAAAwAsCAAMAAgAGAAAAircEqaXy86EFEiuKm6wCmtueA4CkWOjpYpkGuw2vbGGmHUN 5TnAA3cPKAAAIfkEBQAAAAAsAAAAAAEAAQAAAgJEAQAh+QQFAAAAACwAAAAAAQABAAACAkQBACH5 BAUAAAAALAAAAAABAAEAAAICRAEAIfkEBQAAAAAsAAAAAAEAAQAAAgJEAQAh+QQFAAAAACwAAAAA AQABAAACAkQBACH5BAUAAAAALAAAAAABAAEAAAICRAEAIfkEBQAAAAAsAAAAAAEAAQAAAgJEAQA7"/>
+
+<style>
+body {
+  background-color: #f0f0f0;
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body > p {
+  width: 450px;
+  margin: 0 auto;
+}
+
+body > h1 {
+  font-size: 36px;
+  color: #007bff;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  body > p {
+    width: 90%; /* Full width on small screens */
+  }
+}
+
+#imageContainer {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+}
+
+#imageContainer > img {
+  height: 150px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#caption {
+  color: #707070;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+}
+</style>
+
+
 <body>
-    <h1>Is this thing on?!</h1>
+  <h1>Luna's Email Inbox</h1>
+  <p>
+    Lunainbox is a custom domain for a private email. For professional
+    inqueries, please use
+    <a href="mailto:dev@lunainbox.com">dev@lunainbox.com</a> to contact me.
+
+    <br/><br/>
+
+    <div id="imageContainer">
+      <img id="image" src="img/osrs-box.png" alt="Box">
+    </div>
+    <div id="caption">*a box*</div>
+  </p>
+  <script>
+  image.addEventListener('click', function() {
+    image.src = "img/woona.gif";
+    caption.innerHTML = "*luna was in that box!*";
+  });
+  </script>
 </body>
 </html>
